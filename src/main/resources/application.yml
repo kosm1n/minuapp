@@ -1,0 +1,5 @@
+spring:
+  application:
+    name: minuapp
+  runtime: java11
+  instance_class: F4
