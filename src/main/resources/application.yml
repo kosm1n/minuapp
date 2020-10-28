@@ -2,11 +2,21 @@ info:
   Description: MS for Prosegur's SmartCash Loader
 server:
   port: 8080
+database: mysql
 spring:
   application:
     name: minuapp
+  #datasource:
+    #driverClassName: org.postgresql.Driver
+    #url: jdbc:postgresql://localhost:5432/minuapp
+    #username: postgres
+    #password: password
+  cloud:
+    gcp:
+      sql:
+        database-name: minuapp
+        instance-connection-name: folkloric-vault-292410:us-central1:minu-app-postgresql-instance
   datasource:
-    driverClassName: org.postgresql.Driver
-    url: jdbc:postgresql://localhost:5432/minuapp
-    username: postgres
-    password: password
+    initialization-mode: always
+  profiles:
+    active: postgresql

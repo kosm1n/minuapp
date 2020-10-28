@@ -18,7 +18,26 @@
 		<java.version>11</java.version>
 	</properties>
 
+	<dependencyManagement>
+		<dependencies>
+			<dependency>
+				<groupId>org.springframework.cloud</groupId>
+				<artifactId>spring-cloud-gcp-dependencies</artifactId>
+				<version>1.0.0.RC1</version>
+				<type>pom</type>
+				<scope>import</scope>
+			</dependency>
+		</dependencies>
+	</dependencyManagement>
+
 	<dependencies>
+
+		<!--Cloud dependencies-->
+		<dependency>
+			<groupId>org.springframework.cloud</groupId>
+			<artifactId>spring-cloud-gcp-starter-sql-mysql</artifactId>
+		</dependency>
+
 		<dependency>
 			<groupId>org.springframework.boot</groupId>
 			<artifactId>spring-boot-starter-actuator</artifactId>
@@ -71,6 +90,15 @@
 			</exclusions>
 		</dependency>
 	</dependencies>
+
+	<repositories>
+		<!-- Use Spring Milestone Repository -->
+		<repository>
+			<id>repository.spring.milestone</id>
+			<name>Spring Milestones Repository</name>
+			<url>http://repo.spring.io/milestone</url>
+		</repository>
+	</repositories>
 
 	<build>
 		<plugins>
