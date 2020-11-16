@@ -16,7 +16,10 @@ spring:
       sql:
         database-name: minuappdb
         instance-connection-name: prosegur-scl:us-central1:minuappdb
-  #datasource:
-    #initialization-mode: always
+      project-id: prosegur-scl
+  datasource:
+    initialization-mode: always
+    username: postgres
+    password: password
   profiles:
     active: postgresql
