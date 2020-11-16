@@ -2,7 +2,7 @@ info:
   Description: MS for Prosegur's SmartCash Loader
 server:
   port: 8080
-database: mysql
+database: postgresql
 spring:
   application:
     name: minuapp
