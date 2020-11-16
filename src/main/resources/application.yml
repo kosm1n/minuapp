@@ -1,7 +1,7 @@
 info:
   Description: MS for Prosegur's SmartCash Loader
-server:
-  port: 8080
+  #server:
+  #port: 8080
 database: postgresql
 spring:
   application:
