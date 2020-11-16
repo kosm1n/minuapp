@@ -9,8 +9,8 @@ import org.springframework.context.annotation.FilterType;
 @ComponentScan(excludeFilters = {@ComponentScan.Filter(type = FilterType.ASSIGNABLE_TYPE, value = MinuappApplication.class)})
 class MinuappApplicationTests {
 
-	@Test
-	void contextLoads() {
-	}
+	//@Test
+	//void contextLoads() {
+	//}
 
 }
