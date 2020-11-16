@@ -30,14 +30,16 @@
 		</dependencies>
 	</dependencyManagement>
 
+	<repositories>
+		<!-- Use Spring Milestone Repository -->
+		<repository>
+			<id>repository.spring.milestone</id>
+			<name>Spring Milestones Repository</name>
+			<url>http://repo.spring.io/milestone</url>
+		</repository>
+	</repositories>
+
 	<dependencies>
-
-		<!--Cloud dependencies-->
-		<dependency>
-			<groupId>org.springframework.cloud</groupId>
-			<artifactId>spring-cloud-gcp-starter-sql-mysql</artifactId>
-		</dependency>
-
 		<dependency>
 			<groupId>org.springframework.boot</groupId>
 			<artifactId>spring-boot-starter-actuator</artifactId>
@@ -49,6 +51,12 @@
 		<dependency>
 			<groupId>org.springframework.boot</groupId>
 			<artifactId>spring-boot-starter-web</artifactId>
+		</dependency>
+
+		<!-- Add CloudSQL Starter for MySQL -->
+		<dependency>
+			<groupId>org.springframework.cloud</groupId>
+			<artifactId>spring-cloud-gcp-starter-sql-postgresql</artifactId>
 		</dependency>
 
 		<!--Persistence dependencies-->
@@ -90,15 +98,6 @@
 			</exclusions>
 		</dependency>
 	</dependencies>
-
-	<repositories>
-		<!-- Use Spring Milestone Repository -->
-		<repository>
-			<id>repository.spring.milestone</id>
-			<name>Spring Milestones Repository</name>
-			<url>http://repo.spring.io/milestone</url>
-		</repository>
-	</repositories>
 
 	<build>
 		<plugins>

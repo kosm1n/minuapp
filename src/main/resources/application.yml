@@ -14,8 +14,8 @@ spring:
   cloud:
     gcp:
       sql:
-        database-name: minuapp
-        instance-connection-name: folkloric-vault-292410:us-central1:minu-app-postgresql-instance
+        database-name: minuappdb
+        instance-connection-name: prosegur-scl:us-central1:minuappdb
   datasource:
     initialization-mode: always
   profiles:
