@@ -18,7 +18,7 @@ import java.util.UUID;
 @Data
 @Builder
 @Entity
-@Table(name = "tab1", schema = "minuapp")
+@Table(name = "tab1", schema = "minuappdb")
 @EntityListeners(AuditingEntityListener.class)
 public class Tab1 implements Serializable {
 
