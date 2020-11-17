@@ -23,3 +23,10 @@ spring:
     password: password
   profiles:
     active: postgresql
+  security:
+    oauth2:
+      client:
+        registration:
+          google:
+            client-id: 986862737807-5mhnhqe5opp8dljfdqvse8fhg1ls9c11.apps.googleusercontent.com
+            secret: WwLHsYGWZjih4a32XTC0YBo5
