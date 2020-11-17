@@ -29,4 +29,4 @@ spring:
         registration:
           google:
             client-id: 986862737807-5mhnhqe5opp8dljfdqvse8fhg1ls9c11.apps.googleusercontent.com
-            secret: WwLHsYGWZjih4a32XTC0YBo5
+            client-secret: WwLHsYGWZjih4a32XTC0YBo5
