@@ -8,6 +8,6 @@ spring:
     name: minuapp
   datasource:
     driverClassName: org.postgresql.Driver
-    url: jdbc:postgresql://localhost:5432/minuapp
+    url: jdbc:postgresql://34.66.125.210:5432/minuapp
     username: postgres
     password: password
